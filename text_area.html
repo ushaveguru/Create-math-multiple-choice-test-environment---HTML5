@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Video data">
+      <meta name="keywords" content="HTML,CSS,JavaScript">
+      <meta name="author" content="Usha Veguru">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ h1.one
+                  {
+                        position:relative;
+                        background-color: #DCDCDC;
+                        font-size: 20px;
+                        top: 0%;
+                        font-family: "Arial"
+                  }
+.text1
+  {
+    padding-left: 35px;
+  
+
+ 
+      vertical-align: 50px;
+      font-size: 20px;
+  }
+  .container1 {
+
+   
+    padding-left: 35px;
+  
+    cursor: pointer;
+ 
+    vertical-align: 100px;
+    font-size: 20px;
+  }
+  .container2{
+
+   
+    padding-left: 100px;
+
+  vertical-align: 100px;
+    cursor: pointer;
+    
+    font-size: 20px;
+  }
+  .container3{
+
+   
+    padding-left: 35px;
+
+
+    cursor: pointer;
+    font-size: 20px;
+    vertical-align: 100px;
+  }
+  .container4{
+
+   
+    padding-left: 110px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    vertical-align: 100px;
+  }
+  .btn1{
+    position: absolute;
+    font-size: 16px;
+    padding: 16px 30px;
+    
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    left: 3%;
+    font-size: 18px;
+  }
+  .btn2{
+    position: absolute;
+    font-size: 16px;
+    
+    padding: 16px 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    left: 25%;
+    font-size: 18px;
+  }
+ 
+</style>
+</head>
+	<body>
+            <h1 class="one"><center>Question 4</center></h1>
+		<p class="text1">Watch the video and answer the following question.<br />
+            What is the source as mentioned in the video?</p>
+            <label class=v1>
+            <iframe width="560" height="315" align="right" src="https://www.youtube.com/embed/FcZqGQ8Ra5U" frameborder="0" allowfullscreen></iframe> 
+            </label> 
+		
+		<label class="container1">
+         	     <input  type = "radio" name="option" id="option1"/>NASA.Gov
+         	</label>
+            <label class="container2">
+      	    <input type = "radio" name="option" id="option2"/> Data.Gov
+            </label>
+                 <br/>
+         	<label class="container3">	
+                 <input type = "radio" name="option" id="option3"/>Facebook
+            </label>
+         	<label class="container4">		
+      	     <input type = "radio" name="option" id="option4"/>XYZ.net
+            </label>
+
+                 <br />
+                  <script>
+                        if (document.getElementByID("option1").checked == true){
+                              var count = localStorage.getItem("result") + 1;
+                              localStorage.setItem("result", count);
+                              // var page = document.getElementByID("Text_Area_Mark");
+                              // var score = page.dataset.score;
+                              // score = score + 1;
+
+                        } 
+                  </script>
+         			
+      	     <!-- <button type="submit" ><a data-score=score data-id="text_area" href="summary.html">Submit & Next Question</a></button> --> 
+                 
+              
+            <button class="btn1" type="submit" ><a  href="summary.html">Submit & Next Question</a></button> 
+            <button class="btn2" type="submit"><a href="summary.html"> Cancel & Clear Section</a></button>            
+      	
+	</body>
+
+</html>

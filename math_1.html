@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Distance between two points">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Usha Veguru">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+			h1.one
+			{
+				position:relative;
+				background-color: #DCDCDC;
+				font-size: 20px;
+				top: 0%;
+				font-family: "Arial"
+			}
+		
+	.text1
+	{
+		padding-left: 35px;
+  
+
+ 
+    	vertical-align: 50px;
+    	font-size: 20px;
+	}
+	.container1 {
+
+   
+    padding-left: 35px;
+  
+    cursor: pointer;
+ 
+    vertical-align: 100px;
+    font-size: 20px;
+	}
+	.container2{
+
+   
+    padding-left: 182px;
+
+ 	vertical-align: 100px;
+    cursor: pointer;
+    
+    font-size: 20px;
+	}
+	.container3{
+
+   
+    padding-left: 35px;
+
+
+    cursor: pointer;
+    font-size: 20px;
+    vertical-align: 150px;
+	}
+	.container4{
+
+   
+    padding-left: 65px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    vertical-align: 150px;
+	}
+	.btn1{
+    position: absolute;
+    font-size: 16px;
+    padding: 16px 30px;
+    
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    left: 3%;
+    font-size: 18px;
+	}
+	.btn2{
+    position: absolute;
+    font-size: 16px;
+    
+    padding: 16px 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    left: 25%;
+    font-size: 18px;
+	}
+
+	</style>
+</head>
+	<body>
+		<script>
+      			function.checkradio(){
+      					if (document.getElementById("option4").checked)
+      					{
+      						var count = localStorage.getItem("result");
+      						count = count + 1;
+      						localStorage.setItem("result", count);
+      					}
+      				
+      				
+      				// var page = document.getElementByID("login");
+      				// var score = page.dataset.score;
+      				// score = score + 1;
+      				// document.getElementByID("value").innerHTML = score;
+
+      				} 
+      			
+      		</script>
+		<h1 class="one"><center>Question 1</center></h1>
+
+		<p class="text1">Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line.</p>
+		<img src="distance-2points02.gif" width="500" height="377"  align="right">
+			<label class="container1">
+			<input type = "radio" name="option" id="option1">
+				<math xmlns="http://www.w3.org/1998/Math/MathML">
+		 			<mrow>
+            			<mi>y</mi><mo> = </mo>
+						<mi>mx</mi><mo>+</mo>
+						<mi>b</mi>
+         			</mrow>
+         		</math>
+         	</label>
+         	<label class="container2">
+         	<input type = "radio" name="option" id="option2">
+         		<math xmlns="http://www.w3.org/1998/Math/MathML">
+         			<mrow>
+            			<mi>y</mi>
+            			<mo>-</mo>
+            			<msub>
+            				<mi>y</mi>
+            				<mn>1</mn>
+            			</msub>
+            			<mo> = </mo>
+						<mi>m </mi>
+						<mo>( </mo>
+						<mi>x</mi>
+						<mo>-</mo>
+						<msub>
+							<mi>x</mi>
+							<mn>1</mn>
+						</msub>
+						<mo>)</mo>
+						
+         			</mrow>
+			
+      			</math>
+      		</label>
+
+      			<br />
+      		<label class="container3">
+      		<input type = "radio" name="option" id="option3">
+         		<math xmlns="http://www.w3.org/1998/Math/MathML">
+         			<mrow>
+         				<msup>
+         					<mfenced>
+         						<mrow>
+         							
+            							<mi>x</mi>
+            							<mo>-</mo>
+            							<mi>h</mi>
+            					
+            					</mrow>
+            				</mfenced>
+            				<mrow>
+            					<mi>2</mi>
+            				</mrow>
+            			</msup>
+            			<mo> + </mo>
+            			<mrow>
+         					<msup>
+         						<mfenced>
+         							<mrow>
+         							
+            							<mi>y</mi>
+            							<mo>-</mo>
+            							<mi>k</mi>
+            					
+            						</mrow>
+            					</mfenced>
+            					<mrow>
+            						<mi>2</mi>
+            					</mrow>
+            			</msup>
+            			<mo> = </mo>
+            			<msup>
+            				<mi>r</mi>
+            				<mn>2</mn>
+            			</msup>
+            		</mrow>
+            	</mrow>
+            </math>
+        </label>
+            <label class="container4">
+           <input type = "radio" name="option" id="option4" onclick="checkradio()">
+         		<math xmlns="http://www.w3.org/1998/Math/MathML">
+         			<mrow>
+            			<mi>y</mi>
+            			<mo>-</mo>
+            			<msub>
+            				<mi>y</mi>
+            				<mn>2</mn>
+            			</msub>
+            			<mo> = </mo>
+						<mfrac>
+							<mrow>
+								<msub>
+									<mi>y</mi>
+									<mn>2</mn>
+								</msub>
+								<mo>-</mo>
+								<msub>
+									<mi>y</mi>
+									<mn>1</mn>
+								</msub>
+							</mrow>
+							<mrow>
+								<msub>
+									<mi>x</mi>
+									<mn>2</mn>
+								</msub>
+								<mo>-</mo>
+								<msub>
+									<mi>x</mi>
+									<mn>1</mn>
+								</msub>
+							</mrow>
+
+						</mfrac>
+
+					<mfenced>
+						<mrow>
+						<mi>x</mi>
+						<mo>-</mo>
+						<msub>
+							<mi>x</mi>
+							<mn>2</mn>
+						</msub>
+					</mrow>
+					</mfenced>
+						
+         			</mrow>
+			
+      			</math>
+      		</label>
+      			<br />
+
+
+            			<!-- <mo> + </mo>
+						<msup>
+         					<mi>
+         						<mo>(</mo>
+            					<mi>y</mi>
+            					<mo>-</mo>
+            					<mi>k</mi>
+            					<mo>(</mo>
+            				</mi>
+            				<mn>2</mn>
+            			</msup> -->
+						
+         		
+
+
+      		
+      		
+      		
+      		<button class="btn1" type="submit" ><a href="cosine.html"  >Submit & Next Question</a></button>
+      		<!-- <button type="submit" ><a data-score=score data-id="math_1" href="cosine.html" >Submit & Next Question</a></button>  -->
+      		<button class="btn2" type="submit" ><a href="summary.html"> Cancel & Clear Section</a></button>
+      	
+	</body>
+
+</html>

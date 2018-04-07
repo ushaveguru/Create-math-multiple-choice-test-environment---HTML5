@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+  	<meta name="description" content="Login Page">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
+  	<meta name="author" content="Usha Veguru">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+			h1.one
+			{
+				position:relative;
+				background-color: #DCDCDC;
+				font-size: 20px;
+				top: 10px;
+				font-family: "Arial";
+			}
+	.text1{
+    position: absolute;
+    font-size: 30px;
+    
+    
+    border: none;
+    top:20%;
+    text-align: center;
+    left: 40%;
+    font-size: 20px;
+    font-family: "Arial"
+	}
+	.text2{
+    position: absolute;
+    font-size: 20px;
+   
+    font-family: "Arial";
+    border: none;
+  	top:30%;
+    text-align: center;
+    left: 40%;
+    font-size: 20px;
+	}
+	.box1{
+    position: absolute;
+    font-size: 20px;
+    
+  
+    border: none;
+      text-align: center;
+    top:22%;
+    left: 55%;
+   
+	}
+	.box2{
+    position: absolute;
+    font-size: 20px;
+    
+  	width:150px;
+    border: none;
+  
+    text-align: center;
+    top:32%;
+    left: 55%;
+    
+	}
+	.btn2{
+    position: absolute;
+  
+    
+    padding: 16px 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    top:50%;
+    left: 50%;
+    font-size: 18px;
+	}
+	.link{
+    position: absolute;
+   
+    text-align: center;
+    top:52%;
+    left: 30%;
+    font-size: 20px;
+	}
+	
+		</style>
+		
+
+	</head>
+	<body>
+		<h1 class="one"><center>User Login</center></h1>
+	<form>
+		
+		<p class="text1">	Username: </p>
+		<label class="box1">
+
+		<input type="text" name="username" size="35">
+		</label>
+
+		<br>
+		
+		<p class="text2"> Password: </p>
+		<label class="box2">
+		 <input type="text" name="password" size="35" >
+		</label>
+	    
+	    <br>
+		<script>
+// Check browser support
+			if (typeof(Storage) !== "undefined") {
+    // Store
+    			localStorage.setItem("result", 0);
+    			document.getElementById("val").innerHTML = localStorage.getItem("result");
+    // Retrieve
+    			
+			}
+		</script>
+		<label class="link">
+		<a href="Create Account/Forgot">Create Account/Forgot?</a>
+	    </label>
+		<button class="btn2" type="submit" ><center><a href="math_1.html">Login</a></center></button>
+		
+
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="description" content="Text Question">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Usha Veguru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ h1.one
+                  {
+                        position:relative;
+                        background-color: #DCDCDC;
+                        font-size: 20px;
+                        top: 0%;
+                        font-family: "Arial"
+                  }
+.text1
+  {
+    padding-left: 35px;
+    font-size: 15px;
+  
+    font-family: "Arial"
+ 
+    
+  }
+  .container1 {
+
+   
+    padding-left: 35px;
+  
+    cursor: pointer;
+ 
+    vertical-align: 100px;
+    font-size: 20px;
+  }
+  .container2 {
+
+   
+    padding-left: 35px;
+  
+    cursor: pointer;
+ 
+    vertical-align: 100px;
+    font-size: 20px;
+   }
+  .container3{
+
+   
+    padding-left: 35px;
+
+
+    cursor: pointer;
+    font-size: 20px;
+    vertical-align: 100px;
+  }
+
+  .btn1{
+    position: absolute;
+    font-size: 16px;
+    padding: 16px 30px;
+    
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    left: 3%;
+    top: 83%;
+    font-size: 18px;
+  }
+  .btn2{
+    position: absolute;
+    font-size: 16px;
+    
+    padding: 16px 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    left: 25%;
+    top: 83%;
+    font-size: 18px;
+  }
+</style>
+</head>
+	<body>
+		
+		      <h1 class="one"><center>Question 3</center></h1>
+			     <label class="text1">
+         	   <pre>    As per the latest twitter news, complete the article snippet given by
+    selecting appropriate choices for the blanks. </pre>
+           </label>
+
+        <pre align="right" font-size="25px">  
+          Twitter wants more cash. The company announced two $<textarea style="width:35px; height:10px;" id= "amount" readonly></textarea> 
+        debt offerings in a filing today, each with a potential 
+          $100 increase provided that the sales are oversubscribed. 
+          Assuming full tip, including the $100 million boosters 
+          <textarea style="width:62px; height:13px;" id= "company" readonly></textarea> will raise up to $1.5 billion with the two offerings.
+        </pre>
+
+              <script>
+                  if (document.getElementByID("opt1").checked == true){
+                              // var page = document.getElementByID("cosine");
+                              // var score = page.dataset.score;
+                              // score = score + 1;
+                              var count = localStorage.getItem("result") + 1;
+                              localStorage.setItem("result", count);
+
+                        } 
+                  function checkradio1() {
+                  document.getElementById("opt1").checked = true;
+                  document.getElementById("opt2").checked = true;
+                  var amount1 = document.getElementById("amount")
+                  amount1.value = 650
+                  var company1 = document.getElementById("company")
+                  company1.value = "Twitter"
+                  }
+                  function checkradio2() {
+                  document.getElementById("opt3").checked = true;
+                  document.getElementById("opt4").checked = true;
+                  var amount2 = document.getElementById("amount")
+                  amount2.value = 550
+                  var company2 = document.getElementById("company")
+                  company2.value = "Google"
+                  }
+                  function checkradio3() {
+                  document.getElementById("opt5").checked = true;
+                  document.getElementById("opt6").checked = true;
+                  var amount3 = document.getElementById("amount")
+                  amount3.value = 650
+                  var company3 = document.getElementById("company")
+                  company3.value = "Facebook"
+                  }
+              </script>
+              <label class="container1">
+              <input id= "opt1" type="radio" onclick='checkradio1()' name="option1"/>Option 1  Mark 1:$650
+              <input id = "opt2" type = "radio" name="option" /> Option 1 Mark 2:Twitter</div>
+              </label>
+              
+              <label class="container2">
+              <br/>
+              <input id = "opt3" type="radio" onclick='checkradio2()' name="option1"/>Option 2  Mark 1:$550
+              <input id = "opt4" type = "radio" name="option" />Option 2 Mark 2:Google</div>
+              </label>
+              <br/>
+              <label class="container3">
+              <input id = "opt5" type="radio" onclick='checkradio3()' name="option1"/>Option 3  Mark 1:$650
+              <input id = "opt6" type = "radio" name="option" />Option 3 Mark 2:Facebook</div>
+              </label>
+              <br/>
+            
+              
+              
+             <!-- <button type="submit" ><a data-score=score data-id="Text_Area_Mark" href="text_area.html">Submit & Next Question</a></button> --> 
+             <button class="btn1" type="submit" ><a  href="text_area.html">Submit & Next Question</a></button> 
+             <button class="btn2" type="submit" ><a href="summary.html"> Cancel & Clear Section</a></button>
+
+         		
+
+                            
+      	
+	</body>
+
+</html>
